@@ -1,0 +1,37 @@
+Monitor and Managed Mode for Wlan
+sudo airmon-ng check
+
+starting is (we create a wlan0mo:
+sudo airmon-ng start wlan0
+
+stopping is:
+sudo airmon-ng stop wlan0mon
+
+
+To restart the network:
+sudo systemctl start NetworkManager
+
+
+better commands
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 mode monitor
+sudo ifconfig wlan0 up
+
+
+
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 mode managed
+sudo ifconfig wlan0 up
+
+
+
+
+
+
+listing available 
+sudo airmon-ng
+
+getting it back 
+sudo airmon-ng stop wlan0mon
+
+sudo airmon-ng stop wlan0mon

